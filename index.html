@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      function validateForm() {
+      var name = document.forms["myForm"]["name"].value;
+      var phone=document.forms["myForm"]["phno"].value;
+      var email = document.forms["myForm"]["email"].value;
+      var message = document.forms["myForm"]["message"].value;
+
+
+      var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (!emailRegex.test(email)) {
+        alert("Invalid email address");
+      return false;
+      }
+      return true;
+      }
+    </script>
+    <!-- <style>
+      .box{
+        position: relative;
+        z-index: 1;
+        margin:60px;
+        width: auto;
+        height: 200px;
+        background-color: white;
+        border: 2px white ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:80px;
+        border-radius: 40px;
+        -webkit-text-stroke: 1px white;
+        color:rgb(12, 57, 125);
+      }
+    </style> -->
+  </head>
+  <body>
+    <!--<div class="boxcontainer">
+      <div class="box">
+        <p class="heading">
+          <img src="influencermarketing.png" width="160px" height="100px">
+          INFLUENCER MARKETING</p>
+      </div>
+    </div> -->
+    <h1><img src="influencermarketing.png" width="160px" height="100px">
+      INFLUENCER MARKETING</p></h1>
+    <div class="pill-nav">
+        <a href="index.html">Creator</a>
+        <a href="company.html">Company</a>
+      </div>
+    
+    <div class="reservation-form">
+      <form name="myForm" method="post" action="submit.php" onsubmit="return validateForm()">
+        <div class="form-group">
+          <input type="text" placeholder="Full Name" id="name" name="name" required>
+        </div>
+        <label for="gender">Select your Gender:</label>
+        <div class="form-group">
+          <input type="radio" id="gender" name="gender">
+          <label for="gender">Male</label>
+          <input type="radio" id="gender" name="gender">
+          <label for="gender">Female</label>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Social Media Link" id="social_media" name="social_media" required>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Phone Number" id="phno" name="phno" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Email Address" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="tour">Select Your Domain:</label><br>
+          <select name="domain" id="domain">
+            <option value="cosmetics">Cosmetics</option>
+            <option value="clothing&fashion">Clothing&Fashion</option>
+            <option value="fitness&sports">Fitness&Sports</option>
+            <option value="technology&gadgets">Technology&Gadgets</option>
+            <option value="moviereviews">Movie Reviews</option>
+            <option value="Food and Beverage">Food and Beverage</option>
+            <option value="Travel and Tourism">Travel and Tourism</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Home and Garden">Home and Garden</option>
+            <option value="Automotive">Automotive</option>
+            <option value="Business and Finance">Business and Finance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Number of followers" id="followers" name="followers" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="City" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <input type="mes" placeholder="Message" id="mes" name="mes" required>
+        </div>
+        
+        <button type="submit">Register</button>
+      </form>
+      <br>
+    </div>
+    <center>
+      <div id="result"></div>
+    </center>
+    <div class="column">
+      <p style="font-size: 30px">Contact Details:</p>
+      <div style="display: flex; align-items: center;">
+        <img src="email_logo.png" alt="your-image-description" style="width: 20%; height: auto;">
+        <p style="margin:0"><a href="mailto:influencermarketing@gmail.com">influencermarketing@gmail.com</a></p>
+        
+      </div>
+      <div style="display: flex; align-items: center;">
+        <img src="phone-icon.png" alt="your-image-description" style="width: 20%; height: auto;">
+        <p style="margin:5px"><a href="tel:+919876543210">+91-9701678895</a></p>
+      </div>
+      <p style="font-size:30px">Find us Online</p>
+      <div style="display: flex; align-items: center;">
+        <img src="insta_logo.png" alt="your-image-description" style="width: 20%; height: auto;">
+        <p style="margin:5px"><a href="https://www.youtube.com/">@influencermarketing</a></p>
+      </div><br>
+      <div style="display: flex; align-items: center;">
+        <img src="youtube_logo.png" alt="your-image-description" style="width: 15%; height: auto;">
+        <p style="margin:5px"><a href="https://www.youtube.com/">@influencermarketing</a></p>
+      </div>
+    </div>
+    
+    
+  </body>
+</html>

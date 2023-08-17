@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      window.onbeforeunload = function() {
+      window.location.href = 'index.html';
+      };
+
+    </script>
+  </head>
+  <body>
+    <h1>
+        <img src="influencermarketing.png" width="200px" height="100px">
+        INFLUENCER MARKETING
+    </h1>
+    <div class="pill-nav">
+        <a href="index.html">Creator</a>
+        <a href="company.html">Company</a>
+      </div>
+    <div class="reservation-form">
+      <form method="get" action="retrieve.php">
+        <div class="form-group">
+          <input type="text" placeholder="Company Name" id="cname" name="cname" required>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Website Link" id="link" name="link" required>
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Phone Number" id="phno" name="phno" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Email Address" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="tour">Select Your Domain:</label><br>
+          <select name="domain" id="domain">
+            <option value="cosmetics">Cosmetics</option>
+            <option value="clothing&fashion">Clothing&Fashion</option>
+            <option value="fitness&sports">Fitness&Sports</option>
+            <option value="technology&gadgets">Technology&Gadgets</option>
+            <option value="moviereviews">Movie Reviews</option>
+            <option value="Food and Beverage">Food and Beverage</option>
+            <option value="Travel and Tourism">Travel and Tourism</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Home and Garden">Home and Garden</option>
+            <option value="Automotive">Automotive</option>
+            <option value="Business and Finance">Business and Finance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter minimum number of followers needed" id="number" name="number">
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Enter city from which you want influencers" id="reqcity" name="reqcity">
+        </div>
+        <div class="form-group">
+            <input type="mes" placeholder="Message" id="mes" name="mes" required>
+        </div>
+        <button type="submit" style="font-size: 15px;">Get Influencers</button>
+      </form>
+    </div>
+    <center>
+      <div class="column">
+        <p style="font-size: 30px;">Contact Details:</p>
+          <div style="display: flex; align-items: center;">
+            <img src="email_logo.png" alt="your-image-description" style="width: 20%; height: auto;">
+            <p style="margin:0"><a href="mailto:influencermarketing@gmail.com">influencermarketing@gmail.com</a></p>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <img src="phone-icon.png" alt="your-image-description" style="width: 20%; height: auto;">
+            <p style="margin:5px"><a href="tel:+919876543210">+91-9701678895</a></p>
+          </div>
+        </div>
+    </center>
+  </body>
+</html>

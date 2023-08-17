@@ -1,0 +1,148 @@
+body{
+    background-image: url(background_new.jpg);
+    font-size: 30px;
+}
+.boxcontainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+.box {
+  position: relative;
+  z-index: 1;
+  width: 1200px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 60px;
+  font-weight: bold;
+  color:#03044b;
+  -webkit-text-stroke: 1px white;
+}
+.reservation-form {
+    width: 550px;
+    margin: 10px auto;
+    margin-left: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    background-color: white;
+    float:left;
+    font-size: 20px;
+  }
+  .pill-nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 5px;
+    width:110px;
+    margin-left: 240px;
+  }
+  
+  .pill-nav a:hover {
+    background-color: #03044b;
+    color: white;
+  }
+  h1{
+    font-size: 60px;
+    margin-left: 400px;
+  }
+  
+  .pill-nav a.active {
+    background-color: rgb(163, 172, 181);
+    color: white;
+  }
+  h3{
+        
+        color:red;
+  }
+  
+  
+  .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    width: 100%;
+  }
+  input[type="mes"]{
+    Height:40px;
+    padding:10px;
+    width:100%;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 40px ;
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 200px;
+  }
+
+  #header {
+    background-color: #cccccc;
+    padding: 10px;
+    margin-top: 0px;
+    height: 130px;
+    font-size: 60px;
+  }
+
+  #footer1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    padding: 10px;
+    height: 120px;
+    clear: both;
+    width:50%;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  select{
+    height: 40px;
+    width: 423px;
+  }
+  .column{
+    float:right;
+    width:25%;
+    margin-right: 15%;
+    background-color: #ffffff;
+    padding: 1%;
+    margin-top: 80px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+  .retrieve{
+    border:solid;
+    width:80%;
+  }
+  h4{
+    font-size: 30px;
+    margin-left: 300px;
+  }
+  
